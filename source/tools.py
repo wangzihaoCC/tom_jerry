@@ -10,7 +10,7 @@ class Game:
         self.keys = pygame.key.get_pressed()
         self.state_dict = state_dict
         self.state = self.state_dict[start_state]  # 这里返回的是一个object，例如这里，state 是 main_menu.MainMenu()
-        print(self.state)
+        #print(self.state)
 
     def update(self):
         if self.state.finished:
@@ -25,7 +25,7 @@ class Game:
 
 
 
-    def run(self, state):   #0802
+    def run(self):
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
@@ -36,7 +36,7 @@ class Game:
                     self.keys = pygame.key.get_pressed()
 
 
-            self.update(self.screen, self.keys)  #0802
+            self.update()
 
             pygame.display.update()
             self.clock.tick(24)
