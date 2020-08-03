@@ -49,10 +49,10 @@ class MainMenu:
         elif keys[pygame.K_RETURN]:  #main_menu 的状态切换
             if self.cursor.state == "1P":
                 self.finished = True
-                print("1P")
+                #print("1P")
             elif self.cursor.state == "2P":
                 self.finished = True
-                print("2P")
+                #print("2P")
 
 
     def update(self, surface, keys):
@@ -64,8 +64,8 @@ class MainMenu:
         surface.blit(self.player_image, (110, 490))
         surface.blit(self.cursor.image, self.cursor.rect)
 
-        self.info.create_label("a")
-        self.info.update()
+        # self.info.create_label("a")
+        # self.info.update()
         self.info.draw(surface)
         #print("main_menu_update")
 

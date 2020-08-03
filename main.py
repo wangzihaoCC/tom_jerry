@@ -10,6 +10,7 @@ def main():
         'level':level.Level()
     }
     game = tools.Game(state_dict, 'main_menu')
+
     game.run()
     #game.run(setup.GRAPHICS)
 

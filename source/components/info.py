@@ -20,6 +20,10 @@ class Info:
             self.state_labels.append(((self.create_label('2 PLAYER GAME')), (272, 405)))
             self.state_labels.append(((self.create_label('TOP - ')), (290, 465)))
             self.state_labels.append(((self.create_label('0000000')), (400, 465)))
+        elif self.state == 'load_screen':
+            self.state_labels.append(((self.create_label('WORLD')), (280, 200)))
+            self.state_labels.append(((self.create_label('1 - 1')), (430, 200)))
+            self.state_labels.append(((self.create_label('x   3')), (380, 280)))
 
 
 
